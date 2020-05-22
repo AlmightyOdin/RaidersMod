@@ -29,6 +29,7 @@ namespace RaidersMod.Items.projectiles
         }
          public override void AI()
         {
+			Random ran = new Random();
 			projectile.velocity.X = projectile.velocity.X;
 			projectile.rotation = (float)Math.Atan2((double)projectile.velocity.Y,(double)projectile.velocity.X) + 2f;
 			projectile.velocity.Y = ran.Next(-1,1);
